@@ -179,6 +179,7 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+.terraform.lock.hcl
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -223,8 +224,5 @@ $RECYCLE.BIN/
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
-
-# AWS Credentials
-awscredentials.txt
 
 # End of https://www.toptal.com/developers/gitignore/api/terraform,windows,linux,ansible,composer,node
