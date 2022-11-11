@@ -1,8 +1,8 @@
 name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: User ${{ github.actor }} is validating terraform on branch ${{ github.ref }}
 on: [push]
 jobs:
-  deploy-terraform:
+  terraform-validate-and-plan:
     runs-on: ubuntu-latest
     steps:
       - name: Install Terraform
@@ -20,3 +20,7 @@ jobs:
           AWS_DEFAULT_REGION: us-east-1
         run: |
           cd ${{ github.workspace }} && terraform init
+      - name: Terraform validate
+        run: terraform validate
+      - name: Terraform plan
+        run: terraform plan
