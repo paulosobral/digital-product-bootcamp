@@ -27,3 +27,12 @@ jobs:
         run: terraform validate
       - name: Terraform plan
         run: terraform plan
+      - name: pull-request
+        uses: repo-sync/pull-request@v2
+        with:
+          destination_branch: "main"
+          pr_title: "Pulling ${{ github.ref }} into master" 
+          pr_body: |                                        
+            :crown: *An automated PR*
+
+            _Created by [repo-sync/pull-request](https://github.com/repo-sync/pull-request)_
