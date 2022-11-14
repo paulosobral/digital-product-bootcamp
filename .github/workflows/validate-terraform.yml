@@ -1,6 +1,9 @@
 name: GitHub Actions Demo
 run-name: User ${{ github.actor }} is validating terraform on branch ${{ github.ref }}
-on: [push]
+on:
+  push:
+    branches:    
+      - 'feature/**'
 jobs:
   terraform-validate:
     runs-on: ubuntu-latest
