@@ -27,7 +27,7 @@ jobs:
         run: terraform validate
       - name: Terraform plan
         run: terraform plan
-      - name: Terraform apply
+      - name: Check Terraform apply or Terraform destroy
         run: |
           if cat destroy.yml | grep 'destroy: true' destroy.yml ; then
             terraform destroy --auto-approve
