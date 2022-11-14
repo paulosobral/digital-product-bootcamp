@@ -1,7 +1,7 @@
 name: GitHub Actions Demo
 run-name: User ${{ github.actor }} is apply terraform on branch ${{ github.ref }}
 on:
-  pull_request:
+  push:
     branches:    
       - main
 jobs:
