@@ -1,5 +1,5 @@
 name: GitHub Actions Demo
-run-name: User ${{ github.actor }} is apply terraform on branch ${{ github.ref }}
+run-name: User ${{ github.actor }} is applying or destroying terraform on branch ${{ github.ref }}
 on:
   push:
     branches:    
@@ -29,7 +29,7 @@ jobs:
         run: terraform plan
       - name: Check Terraform apply or Terraform destroy
         run: |
-          if cat destroy.yml | grep 'destroy: true' destroy.yml ; then
+          if grep 'destroy: true' destroy.yml ; then
             terraform destroy --auto-approve
           else
             terraform apply --auto-approve
