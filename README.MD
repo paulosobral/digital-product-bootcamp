@@ -1,9 +1,9 @@
 # Digital Product Bootcamp Blockchain
 
 
-[![Terraform Validate Pipeline](https://github.com/paulosobral/digital-product-bootcamp-network-iac/actions/validate-terraform.yml/badge.svg)](https://github.com/paulosobral/digital-product-bootcamp-network-iac/actions/validate-terraform.yml)
+[![Terraform Validate Pipeline](https://github.com/paulosobral/digital-product-bootcamp-network-iac/actions/workflows/validate-terraform.yml/badge.svg)](https://github.com/paulosobral/digital-product-bootcamp-network-iac/actions/wokflows/validate-terraform.yml)
 
-[![Terraform Apply or Destroy Pipeline](https://github.com/paulosobral/digital-product-bootcamp-network-iac/actions/validate-terraform.yml/badge.svg)](https://github.com/paulosobral/digital-product-bootcamp-network-iac/actions/validate-terraform.yml)
+[![Terraform Validate Pipeline](https://github.com/paulosobral/digital-product-bootcamp-network-iac/actions/workflows/apply-destroy-terraform.yml/badge.svg)](https://github.com/paulosobral/digital-product-bootcamp-network-iac/actions/wokflows/apply-destroy-terraform.yml)
 
 The project aims to provision a **non-mining blockchain testnet based on the Ethereum virtual machine (EVM)** with a backend service exposing the RPC APIs for interaction and a frontend blockexplorer application for monitoring the network using an EC2 instance using the Amazon Linux ISO with size t3.medium and Docker Compose to upload both applications:
 

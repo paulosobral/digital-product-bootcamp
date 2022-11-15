@@ -1,4 +1,4 @@
-name: GitHub Actions Demo
+name: Terraform Validate Feature Branch Pipeline
 run-name: User ${{ github.actor }} is validating terraform on branch ${{ github.ref }}
 on:
   push:

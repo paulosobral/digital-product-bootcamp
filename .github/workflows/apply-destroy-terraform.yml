@@ -1,4 +1,4 @@
-name: GitHub Actions Demo
+name: Terraform Apply or Destroy Branch Main
 run-name: User ${{ github.actor }} is applying or destroying terraform on branch ${{ github.ref }}
 on:
   push:
