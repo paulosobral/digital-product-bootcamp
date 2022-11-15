@@ -16,7 +16,7 @@ This terraform repository aims to provision the necessary network infrastructure
 
 ### Configuring the AWS Cloud Provider
 
-1. Enter the AWS account credentials in the GitHub Secrets of this repository (Settings -> Secrets -> Actions):
+1. Enter the AWS account credentials (environment variables `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` and `AWS_SESSION_TOKEN`) in the GitHub Secrets of this repository (Settings -> Secrets -> Actions):
 
 ![Set GitHub Secrets in this repo](./assets/github-secrets.png "Set GitHub Secrets in this repo")
 
@@ -26,7 +26,7 @@ This terraform repository aims to provision the necessary network infrastructure
 
 ## Development in this repository
 
-This repository uses GitHub Actions for the CD/CI stream. Following the settings in the main branch (Settings -> Code and automation, Branchs -> Branc protection rules, main -> Edit):
+This repository uses GitHub Actions for the CD/CI stream. Following the settings in the main branch (Settings -> Code and automation, Branchs -> Branc protection rules, main):
 
 1. **Require a pull request before merging**
 When enabled, all commits must be made to a non-protected branch and submitted via a pull request before they can be merged into a branch that matches this rule.
