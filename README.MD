@@ -1,5 +1,6 @@
 # Digital Product Bootcamp Blockchain
 
+![image](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
 
 [![Terraform Validate Pipeline](https://github.com/paulosobral/digital-product-bootcamp-network-iac/actions/workflows/validate-terraform.yml/badge.svg)](https://github.com/paulosobral/digital-product-bootcamp-network-iac/actions/wokflows/validate-terraform.yml)
 
@@ -45,5 +46,3 @@ For the development of new features, create a branch following the pattern: `fea
 ### Branch main
 
 When approving an automatically opened pull request, the `.github/apply-destroy-terraform.yml` action is triggered. Which checks whether terraform should be applied (contents of the `destroy.yml` file with the content `destroy: false`) or destroyed (contents of the `destroy.yml` file with the content `destroy: true`).
-
-![image](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
